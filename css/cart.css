@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100&family=Tangerine&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    animation:appear 1000ms 1 forwards linear;
+    -webkit-animation:appear 2000ms 1 forwards linear;
+}
+@keyframes appear{
+    from{
+        clip-path: circle(0.0% at 0 0);
+    }
+    to{
+        clip-path: circle(149.9% at 0 0);
+    }
+}
+body{
+    background-color: white;
+}
+table,tr,th,td{
+    border:1px solid;
+}
+table{
+    
+    width:80%;
+    margin:0 auto;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+table th{
+    background-color: #Ff1694;
+    padding:1rem 2rem;
+    font-family: 'Poppins';
+    color:white;
+}
+table td{
+    text-align: center;
+    padding:1rem;
+    color:white;
+    font-family: 'Poppins';
+    background-color: #b57296;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+table input[type="number"]{
+    width:25px;
+    color:white;
+    background-color:#b57296 ;
+    border: none;
+    text-align: center;
+    
+}
+td.dish{
+    text-align: justify;
+}
+td button.remove{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    border:none;
+    color:red;
+    vertical-align: middle;
+    float: right;
+    padding:.3rem .5rem;
+    background-color:white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 350ms;
+    -webkit-transition: all 350ms;
+    -moz-transition: all 350ms;
+    -ms-transition: all 350ms;
+    -o-transition: all 350ms;
+}
+td button.remove:hover{
+    scale:1.1;
+}
+td button.math{
+    border:none;
+    border-radius: 50%;
+    color:red;
+    padding:.3rem .5rem;
+    transition: all 350ms;
+    -webkit-transition: all 350ms;
+    -moz-transition: all 350ms;
+    -ms-transition: all 350ms;
+    -o-transition: all 350ms;
+}
+td button.math:hover{
+    background-color: brown;
+    color:white;
+    scale:1.1;
+}
+td img{
+    width:70px;
+    vertical-align: middle;
+}
+.total{
+    font-size: 1.25em;
+    text-align: left;
+}
+td hr{
+    width:100%;
+
+}
+.checkout{
+    padding:.25rem .5rem;
+    color:brown;
+    border: none;
+    transition: all 350ms;
+    -webkit-transition: all 350ms;
+    -moz-transition: all 350ms;
+    -ms-transition: all 350ms;
+    -o-transition: all 350ms;
+}
+.checkout:hover{
+    background-color: rgb(90, 0, 0);
+    color:white;
+    scale:1.1;
+    transform:translateX(20px) ;
+    -webkit-transform:translateX(20px) ;
+    -moz-transform:translateX(20px) ;
+    -ms-transform:translateX(20px) ;
+    -o-transform:translateX(20px) ;
+}
+.message{
+    font-size: 1.25em;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px brown;
+    font-style: italic;
+}
+@media(max-width:428px){
+    table{
+        width:100%;
+    }
+    td img{
+       display: none;
+       white-space: nowrap;
+    }
+    .message{
+        font-size: 1em;
+    }
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cart.css">
+    <title>Your Cart</title>
+</head>
+<body>
+    <table>
+        <div class="back">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td class="dish"><input type="checkbox"> <img src="../pictures/dior/dior4.jpg" alt=""> DIORSHOW MAXIMIZER 3D <button class="remove">Remove</button></td>
+                <td>
+                    <button id="sub" class="math" onclick="decrementValue()">-</button>
+                    <input id="qtyBox" type="number" min="1" value="1" readonly>
+                    <button id="add" class="math" onclick="incrementValue()">+</button>
+                </td>
+                <td>₱2,695.00</td>
+            </tr>
+            <tr>    
+                <td colspan="3" class="total"> 
+                    <p>Subtotal: ₱2,695.00</p>
+                    <p>Others: --</p>
+                    <hr>
+                    <p>Total: ₱2,695.00 <button class="checkout">Checkout &#8594;</button></p>
+                    
+                </td>
+            </tr>
+        </table>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>
